@@ -1,0 +1,17 @@
+{
+  "name": "Hipchat People Blocker",
+  "version": "1.0",
+  "description": "This will hide specific people on HipChat",
+  "manifest_version": 2,
+
+  "browser_action": {
+    "default_icon": "hipchat19x19.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://getty.hipchat.com/*"],
+      "js": ["jquery-1.9.1.min.js","hipchat-people-blocker.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

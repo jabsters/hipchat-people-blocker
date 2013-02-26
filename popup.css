@@ -146,3 +146,6 @@ td {
 .check:checked {
   background: url('check_checked.png');
 }
+.right {
+  float:right;
+}

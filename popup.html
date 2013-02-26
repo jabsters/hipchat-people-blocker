@@ -6,12 +6,20 @@
   </head>
   <body>
     <div class="content">
-      <table>
+      <table id="name-table">
 	<tr>
-	  <td><input type="text"></input></td><td><button class="delete" /></td>
+	  <td><input type="text" class="full-name"></input></td>
+	<tr>
+	<tr>
+	  <td><input type="text" class="full-name"></input></td>
 	<tr>
       </table>
       <a id="add-more-people">Add more people</a>
+      <span class="right"><input type="button" id="save-button" value="Save changes" /></span>
+      <span class="right"><input type="button" id="debug" value="show saved data" /></span>
     </div>
+
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="popup.js"></script>
   </body>
 </html>

@@ -5,8 +5,12 @@
   "manifest_version": 2,
 
   "browser_action": {
-    "default_icon": "hipchat19x19.png"
+    "default_icon": "hipchat19x19.png",
+    "default_popup": "popup.html"
   },
+  "permissions": [
+    "storage"
+  ],
   "content_scripts": [
     {
       "matches": ["https://getty.hipchat.com/*"],
